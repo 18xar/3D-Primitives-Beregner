@@ -16,4 +16,3 @@ def KugleAfsnitV(V, a, h):
         resultat=h
 
     return resultat
-
