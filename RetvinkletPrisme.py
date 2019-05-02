@@ -10,7 +10,7 @@ def RetvinkletPrisme(V, G, h):
         resultat=V
 
     if G==0:
-        G = V/H
+        G = V/h
         resultat=G
     if h==0:
         h=V/G
