@@ -102,12 +102,9 @@ def popup(button):
             if event is None or event == "Exit":
                 break
             # læs input
-            if values[0] == "":
-                values[0] = 0
-            if values[1] == "":
-                values[1] = 0
-            if values[2] == "":
-                values[2] = 0
+            for i in range(0, len(values)):
+                if values[i] == "":
+                    values[i] = 0
 
             V = float(values[0])
             r = float(values[1])
