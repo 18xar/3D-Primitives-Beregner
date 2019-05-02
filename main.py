@@ -86,7 +86,8 @@ layout = [
           [sg.RButton("Cylinder"), sg.RButton("CylinderRør")],
           [sg.RButton("RetvinkletPrisme"), sg.RButton("Kasse")],
           [sg.RButton("Kugle"), sg.RButton("KugleUdsnit"), sg.RButton("KugleAfsnit")],
-          [sg.RButton("s")]
+          [sg.RButton("Kegle"), sg.RButton("KegleStub")],
+          [sg.RButton("Pyramide"), sg.RButton("PyramideStub")]
           ]
 
 window = sg.Window('Main').Layout(layout)
