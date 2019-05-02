@@ -1,5 +1,6 @@
 # hold 1
 # andreas, asger, aslak
+import math
 
 
 def CylinderV(V, r, h):
