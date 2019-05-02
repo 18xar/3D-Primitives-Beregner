@@ -1,5 +1,5 @@
 # hold 6
-# Muhammad, Nichi, Nani?!?!
+# Mohammad, Nichi, Nani?!?!
 import math
 
 def KugleV(V, r):
