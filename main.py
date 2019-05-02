@@ -19,42 +19,42 @@ CylenderRoerLayout = [
 ]
 
 KasseLayout = [
-  [sg.Text("Udregn Cylender Rør")],
+  [sg.Text("Udregn Kasse")],
   [sg.InputText("V"), sg.InputText("l"), sg.InputText("b"), sg.InputText("h")],
   [sg.RButton("Cylender")],
   [sg.Text("resultat")]
 ]
 
 KegleLayout = [
-  [sg.Text("Udregn Cylender Rør")],
+  [sg.Text("Udregn Kegle")],
   [sg.InputText("V"), sg.InputText("r"), sg.InputText("h")],
   [sg.RButton("Cylender")],
   [sg.Text("resultat")]
 ]
 
 KegleStubLayout = [
-  [sg.Text("Udregn Cylender Rør")],
+  [sg.Text("Udregn Kegle Stub")],
   [sg.InputText("V"), sg.InputText("R"), sg.InputText("r"), sg.InputText("h")],
   [sg.RButton("Cylender")],
   [sg.Text("resultat")]
 ]
 
 KugleLayout = [
-  [sg.Text("Udregn Cylender Rør")],
+  [sg.Text("Udregn Kugle")],
   [sg.InputText("V"), sg.InputText("r")],
   [sg.RButton("Cylender")],
   [sg.Text("resultat")]
 ]
 
 KugleAfsnitLayout = [
-  [sg.Text("Udregn Cylender Rør")],
+  [sg.Text("Udregn Kugle Afsnit")],
   [sg.InputText("V"), sg.InputText("a"), sg.InputText("h")],
   [sg.RButton("Cylender")],
   [sg.Text("resultat")]
 ]
 
 KugleUdsnitLayout = [
-  [sg.Text("Udregn Cylender Rør")],
+  [sg.Text("Udregn Kugle Udsnit")],
   [sg.InputText("V"), sg.InputText("r"), sg.InputText("h")],
   [sg.RButton("Cylender")],
   [sg.Text("resultat")]
