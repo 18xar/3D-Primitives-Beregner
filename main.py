@@ -14,4 +14,7 @@ layout = [
 
 window = sg.Window('Main').Layout(layout)
 
-button, values = window.Read()
+while True:
+    button, values = window.Read()
+
+    print(button)
