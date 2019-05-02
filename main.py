@@ -92,6 +92,36 @@ layout = [
 
 window = sg.Window('Main').Layout(layout)
 
+button, values = window.Read()
+
+def popup(button):
+	if button == "Cylinder":
+		event, values = sg.Window("Cylinder").Layout(CylenderLayout)
+	if button == "CylinderRoer":
+		event, values = sg.Window("CylinderRoer").Layout(CylenderRoerLayout)
+	if button == "Kasse":
+		event, values = sg.Window("Kasse").Layout(KasseLayout)
+	if button == "Kegle":
+		event, values = sg.Window("Kegle").Layout(KegleLayout)
+	if button == "KegleStub":
+		event, values = sg.Window("KegleStub").Layout(KegleStubLayout)
+	if button == "Kugle":
+		event, values = sg.Window("Kugle").Layout(KugleLayout)
+	if button == "KugleAfsnit":
+		event, values = sg.Window("KugleAfsnit").Layout(KugleAfsnitLayout)
+	if button == "KugleUdsnit":
+		event, values = sg.Window("KugleUdsnit").Layout(KugleUdsnitLayout)
+	if button == "Pyramide":
+		event, values = sg.Window("Pyramide").Layout(PyramideLayout)
+	if button == "PyramideStub":
+		event, values = sg.Window("PyramideStub").Layout(PyramideStubLayout)
+	if button == "RetvinkletPrisme":
+		event, values = sg.Window("RetvinkletPrisme").Layout(RetvinkletPrismeLayout)
+
+
+
+
+
 while True:
     button, values = window.Read()
 
