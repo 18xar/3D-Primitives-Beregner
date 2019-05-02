@@ -83,7 +83,7 @@ RetvinkletPrismeLayout = [
 
 
 layout = [
-          [sg.RButton("Cylinder"), sg.RButton("CylinderRør")],
+          [sg.RButton("Cylinder"), sg.RButton("CylinderRoer")],
           [sg.RButton("RetvinkletPrisme"), sg.RButton("Kasse")],
           [sg.RButton("Kugle"), sg.RButton("KugleUdsnit"), sg.RButton("KugleAfsnit")],
           [sg.RButton("Kegle"), sg.RButton("KegleStub")],
