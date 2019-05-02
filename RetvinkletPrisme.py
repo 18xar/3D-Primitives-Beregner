@@ -1,5 +1,5 @@
 # hold 11
-# ????
+# William og Wilfred
 
 
 def RetvinkletPrisme(V, G, h):
