@@ -136,4 +136,6 @@ def popup(button):
 while True:
     button, values = window.Read()
 
+    popup(button)
+
     print(button)
