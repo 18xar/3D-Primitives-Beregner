@@ -1,3 +1,6 @@
+# hold 8
+# samuel, simon, sophus
+
 import math
 
 
