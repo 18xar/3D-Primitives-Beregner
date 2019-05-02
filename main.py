@@ -96,27 +96,38 @@ button, values = window.Read()
 
 def popup(button):
 	if button == "Cylinder":
-		event, values = sg.Window("Cylinder").Layout(CylenderLayout)
+		window2 = sg.Window("Cylinder").Layout(CylenderLayout)
+		event, values = window2.Read()
 	if button == "CylinderRoer":
-		event, values = sg.Window("CylinderRoer").Layout(CylenderRoerLayout)
+		window2 = sg.Window("CylinderRoer").Layout(CylenderRoerLayout)
+		event, values = window2.Read()
 	if button == "Kasse":
-		event, values = sg.Window("Kasse").Layout(KasseLayout)
+		window2 = sg.Window("Kasse").Layout(KasseLayout)
+		event, values = window2.Read()
 	if button == "Kegle":
-		event, values = sg.Window("Kegle").Layout(KegleLayout)
+		window2 = sg.Window("Kegle").Layout(KegleLayout)
+		event, values = window2.Read()
 	if button == "KegleStub":
-		event, values = sg.Window("KegleStub").Layout(KegleStubLayout)
+		window2 = sg.Window("KegleStub").Layout(KegleStubLayout)
+		event, values = window2.Read()
 	if button == "Kugle":
-		event, values = sg.Window("Kugle").Layout(KugleLayout)
+		window2 = sg.Window("Kugle").Layout(KugleLayout)
+		event, values = window2.Read()
 	if button == "KugleAfsnit":
-		event, values = sg.Window("KugleAfsnit").Layout(KugleAfsnitLayout)
+		window2 = sg.Window("KugleAfsnit").Layout(KugleAfsnitLayout)
+		event, values = window2.Read()
 	if button == "KugleUdsnit":
-		event, values = sg.Window("KugleUdsnit").Layout(KugleUdsnitLayout)
+		window2 = sg.Window("KugleUdsnit").Layout(KugleUdsnitLayout)
+		event, values = window2.Read()
 	if button == "Pyramide":
-		event, values = sg.Window("Pyramide").Layout(PyramideLayout)
+		window2 = sg.Window("Pyramide").Layout(PyramideLayout)
+		event, values = window2.Read()
 	if button == "PyramideStub":
-		event, values = sg.Window("PyramideStub").Layout(PyramideStubLayout)
+		window2 = sg.Window("PyramideStub").Layout(PyramideStubLayout)
+		event, values = window2.Read()
 	if button == "RetvinkletPrisme":
-		event, values = sg.Window("RetvinkletPrisme").Layout(RetvinkletPrismeLayout)
+		window2 = sg.Window("RetvinkletPrisme").Layout(RetvinkletPrismeLayout)
+		event, values = window2.Read()
 
 
 
