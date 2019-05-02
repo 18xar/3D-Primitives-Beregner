@@ -8,7 +8,9 @@ def RetvinkletPrisme(V, G, h):
     if V==0:
 
     if G==0:
-
+        G=3*V/H
+        resultat=G
     if h==0:
 
     return resultat
+
