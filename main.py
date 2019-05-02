@@ -2,6 +2,8 @@
 # emil, kasper, nikolaj
 
 import PySimpleGUI as sg
+import Cylinder, CylinderRør, Kasse, Kegle, KegleStub, Kugle, KugleAfsnit, KugleUdsnit, Pyramide, PyramideStub, \
+    RetvinkletPrisme
 
 CylinderLayout = [
     [sg.Text("Udregn Cylinder")],
@@ -90,11 +92,9 @@ layout = [
 
 window = sg.Window('Main').Layout(layout)
 
-button, values = window.Read()
-
 
 def popup(button):
-    print("popup function")
+    print("kaldt popup function")
     if button == "Cylinder":
         window2 = sg.Window("Cylinder").Layout(CylinderLayout)
         while True:
@@ -102,10 +102,20 @@ def popup(button):
             if event is None or event == "Exit":
                 break
             # læs input
+            if values[0] == "":
+                values[0] = 0
+            if values[1] == "":
+                values[1] = 0
+            if values[2] == "":
+                values[2] = 0
+
             V = float(values[0])
             r = float(values[1])
             h = float(values[2])
-            print(V, r, h)
+
+            resultat = Cylinder.CylinderV(V, r, h)
+            print(resultat)
+            window2.FindElement("resultat-cylinder").Update(str(resultat))
     if button == "CylinderRoer":
         window2 = sg.Window("CylinderRoer").Layout(CylinderRoerLayout)
         while True:
@@ -170,5 +180,8 @@ def popup(button):
 
 while True:
     button, values = window.Read()
+
+    if button is None or button == "Exit":
+        break
 
     popup(button)
