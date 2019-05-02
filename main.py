@@ -106,10 +106,12 @@ def popup(button):
                 if values[i] == "":
                     values[i] = 0
 
+            # lav input om fra string til float
             V = float(values[0])
             r = float(values[1])
             h = float(values[2])
 
+            # udregn og vis resultat
             resultat = Cylinder.CylinderV(V, r, h)
             print(resultat)
             window2.FindElement("resultat-cylinder").Update(str(resultat))
@@ -119,60 +121,203 @@ def popup(button):
             event, values = window2.Read()
             if event is None or event == "Exit":
                 break
+            # læs input
+            for i in range(0, len(values)):
+                if values[i] == "":
+                    values[i] = 0
+
+            # lav input om fra string til float
+            V = float(values[0])
+            R = float(values[1])
+            r = float(values[2])
+            h = float(values[3])
+
+            # udregn og vis resultat
+            resultat = CylinderRør.CylinderRoerV(V, R, r, h)
+            print(resultat)
+            window2.FindElement("resultat-cylinder-roer").Update(str(resultat))
     if button == "Kasse":
         window2 = sg.Window("Kasse").Layout(KasseLayout)
         while True:
             event, values = window2.Read()
             if event is None or event == "Exit":
                 break
+            # læs input
+            for i in range(0, len(values)):
+                if values[i] == "":
+                    values[i] = 0
+
+            # lav input om fra string til float
+            V = float(values[0])
+            l = float(values[1])
+            b = float(values[2])
+            h = float(values[3])
+
+            # udregn og vis resultat
+            resultat = Kasse.KasseV(V, l, b, h)
+            print(resultat)
+            window2.FindElement("resultat-kasse").Update(str(resultat))
     if button == "Kegle":
         window2 = sg.Window("Kegle").Layout(KegleLayout)
         while True:
             event, values = window2.Read()
             if event is None or event == "Exit":
                 break
+            # læs input
+            for i in range(0, len(values)):
+                if values[i] == "":
+                    values[i] = 0
+
+            # lav input om fra string til float
+            V = float(values[0])
+            r = float(values[1])
+            h = float(values[2])
+
+            # udregn og vis resultat
+            resultat = Kegle.KegleV(V, r, h)
+            print(resultat)
+            window2.FindElement("resultat-kegle").Update(str(resultat))
     if button == "KegleStub":
         window2 = sg.Window("KegleStub").Layout(KegleStubLayout)
         while True:
             event, values = window2.Read()
             if event is None or event == "Exit":
                 break
+            # læs input
+            for i in range(0, len(values)):
+                if values[i] == "":
+                    values[i] = 0
+
+            # lav input om fra string til float
+            V = float(values[0])
+            R = float(values[1])
+            r = float(values[2])
+            h = float(values[3])
+
+            # udregn og vis resultat
+            resultat = KegleStub.KegleStubV(V, R, r, h)
+            print(resultat)
+            window2.FindElement("resultat-kegle-stub").Update(str(resultat))
     if button == "Kugle":
         window2 = sg.Window("Kugle").Layout(KugleLayout)
         while True:
             event, values = window2.Read()
             if event is None or event == "Exit":
                 break
+            # læs input
+            for i in range(0, len(values)):
+                if values[i] == "":
+                    values[i] = 0
+
+            # lav input om fra string til float
+            V = float(values[0])
+            r = float(values[1])
+
+            # udregn og vis resultat
+            resultat = Kugle.KugleV(V, r)
+            print(resultat)
+            window2.FindElement("resultat-kugle").Update(str(resultat))
     if button == "KugleAfsnit":
         window2 = sg.Window("KugleAfsnit").Layout(KugleAfsnitLayout)
         while True:
             event, values = window2.Read()
             if event is None or event == "Exit":
                 break
+            # læs input
+            for i in range(0, len(values)):
+                if values[i] == "":
+                    values[i] = 0
+
+            # lav input om fra string til float
+            V = float(values[0])
+            a = float(values[1])
+            h = float(values[2])
+
+            # udregn og vis resultat
+            resultat = KugleAfsnit.KugleAfsnitV(V, a, h)
+            print(resultat)
+            window2.FindElement("resultat-kugle-afsnit").Update(str(resultat))
     if button == "KugleUdsnit":
         window2 = sg.Window("KugleUdsnit").Layout(KugleUdsnitLayout)
         while True:
             event, values = window2.Read()
             if event is None or event == "Exit":
                 break
+            # læs input
+            for i in range(0, len(values)):
+                if values[i] == "":
+                    values[i] = 0
+
+            # lav input om fra string til float
+            V = float(values[0])
+            r = float(values[1])
+            h = float(values[2])
+
+            # udregn og vis resultat
+            resultat = KugleUdsnit.KugleUdsnitV(V, r, h)
+            print(resultat)
+            window2.FindElement("resultat-kugle-udsnit").Update(str(resultat))
     if button == "Pyramide":
         window2 = sg.Window("Pyramide").Layout(PyramideLayout)
         while True:
             event, values = window2.Read()
             if event is None or event == "Exit":
                 break
+            # læs input
+            for i in range(0, len(values)):
+                if values[i] == "":
+                    values[i] = 0
+
+            # lav input om fra string til float
+            V = float(values[0])
+            G = float(values[1])
+            h = float(values[2])
+
+            # udregn og vis resultat
+            resultat = Pyramide.PyramideV(V, G, h)
+            print(resultat)
+            window2.FindElement("resultat-pyramide").Update(str(resultat))
     if button == "PyramideStub":
         window2 = sg.Window("PyramideStub").Layout(PyramideStubLayout)
         while True:
             event, values = window2.Read()
             if event is None or event == "Exit":
                 break
+            # læs input
+            for i in range(0, len(values)):
+                if values[i] == "":
+                    values[i] = 0
+
+            # lav input om fra string til float
+            V = float(values[0])
+            G = float(values[1])
+            g = float(values[2])
+            h = float(values[3])
+
+            # udregn og vis resultat
+            resultat = PyramideStub.PyramideStubV(V, G, g, h)
+            print(resultat)
+            window2.FindElement("resultat-pyramide-stub").Update(str(resultat))
     if button == "RetvinkletPrisme":
         window2 = sg.Window("RetvinkletPrisme").Layout(RetvinkletPrismeLayout)
         while True:
             event, values = window2.Read()
             if event is None or event == "Exit":
                 break
+            # læs input
+            for i in range(0, len(values)):
+                if values[i] == "":
+                    values[i] = 0
+
+            # lav input om fra string til float
+            V = float(values[0])
+            G = float(values[1])
+            h = float(values[2])
+
+            # udregn og vis resultat
+            resultat = RetvinkletPrisme.RetvinkletPrisme(V, G, h)
+            print(resultat)
+            window2.FindElement("resultat-prisme").Update(str(resultat))
 
 
 while True:
