@@ -16,13 +16,21 @@ def KegleStubV(V, R, r, h):
         R1 = (-1*b + math.sqrt(((b*b) - 4 * a * c)))/(2 * a)
         R2 = (-1*b - math.sqrt(((b*b) - 4 * a * c)))/(2 * a)
 
-        if R1 > 0:
-            resultat = R1
-        elif R2 > 0:
-            resultat = R2
+        resultat =
+    elif r == 0:
+        a = (math.pi/3) * h
+        b = (math.pi/3) * h * R
+        c = ((math.pi/3) * h * R*R) - v
+        r1 = (-1 * b + math.sqrt(((b * b) - 4 * a * c))) / (2 * a)
+        r2 = (-1 * b - math.sqrt(((b * b) - 4 * a * c))) / (2 * a)
 
+        if r1 > 0:
+            resultat = r1
+        elif r2 > 0:
+            resultat = r2
     elif h == 0:
         resultat = V/(math.pi/3)*(R*R + r*r + R * r)
 
     return resultat
 
+#R^2 + R * r
