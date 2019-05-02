@@ -1,6 +1,6 @@
 # hold 5
 # luccas, martin, matias
-
+import math
 
 def KegleStubV(V, R, r, h):
     resultat = 0
