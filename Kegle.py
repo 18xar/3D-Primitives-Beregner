@@ -8,7 +8,8 @@ def KegleV(V, r, h):
         V = (3,14/3)*r*r*h
         resultat = V
     elif r == 0:
-        r =0
+        r = math.sqrt(V/((3,14/3)*h))
+        resultat = r
     elif h == 0:
         h = V/((3,14/3)*r*r)
         resultat = h
