@@ -8,77 +8,77 @@ import Cylinder, CylinderRør, Kasse, Kegle, KegleStub, Kugle, KugleAfsnit, Kugl
 CylinderLayout = [
     [sg.Text("Udregn Cylinder")],
     [sg.InputText("V"), sg.InputText("r"), sg.InputText("h")],
-    [sg.RButton("Cylinder")],
+    [sg.RButton("Udregn")],
     [sg.Text("resultat", key="resultat-cylinder")]
 ]
 
 CylinderRoerLayout = [
     [sg.Text("Udregn Cylinder Rør")],
     [sg.InputText("V"), sg.InputText("R"), sg.InputText("r"), sg.InputText("h")],
-    [sg.RButton("Cylinder")],
+    [sg.RButton("Udregn")],
     [sg.Text("resultat", key="resultat-cylinder-roer")]
 ]
 
 KasseLayout = [
     [sg.Text("Udregn Kasse")],
     [sg.InputText("V"), sg.InputText("l"), sg.InputText("b"), sg.InputText("h")],
-    [sg.RButton("Cylinder")],
+    [sg.RButton("Udregn")],
     [sg.Text("resultat", key="resultat-kasse")]
 ]
 
 KegleLayout = [
     [sg.Text("Udregn Kegle")],
     [sg.InputText("V"), sg.InputText("r"), sg.InputText("h")],
-    [sg.RButton("Cylinder")],
+    [sg.RButton("Udregn")],
     [sg.Text("resultat", key="resultat-kegle")]
 ]
 
 KegleStubLayout = [
     [sg.Text("Udregn Kegle Stub")],
     [sg.InputText("V"), sg.InputText("R"), sg.InputText("r"), sg.InputText("h")],
-    [sg.RButton("Cylinder")],
+    [sg.RButton("Udregn")],
     [sg.Text("resultat", key="resultat-kegle-stub")]
 ]
 
 KugleLayout = [
     [sg.Text("Udregn Kugle")],
     [sg.InputText("V"), sg.InputText("r")],
-    [sg.RButton("Cylinder")],
+    [sg.RButton("Udregn")],
     [sg.Text("resultat", key="resultat-kugle")]
 ]
 
 KugleAfsnitLayout = [
     [sg.Text("Udregn Kugle Afsnit")],
     [sg.InputText("V"), sg.InputText("a"), sg.InputText("h")],
-    [sg.RButton("Cylinder")],
+    [sg.RButton("Udregn")],
     [sg.Text("resultat", key="resultat-kugle-afsnit")]
 ]
 
 KugleUdsnitLayout = [
     [sg.Text("Udregn Kugle Udsnit")],
     [sg.InputText("V"), sg.InputText("r"), sg.InputText("h")],
-    [sg.RButton("Cylinder")],
+    [sg.RButton("Udregn")],
     [sg.Text("resultat", key="resultat-kugle-udsnit")]
 ]
 
 PyramideLayout = [
     [sg.Text("Udregn Cylinder Rør")],
     [sg.InputText("V"), sg.InputText("G"), sg.InputText("h")],
-    [sg.RButton("Cylinder")],
+    [sg.RButton("Udregn")],
     [sg.Text("resultat", key="resultat-pyramide")]
 ]
 
 PyramideStubLayout = [
     [sg.Text("Udregn Cylinder Rør")],
     [sg.InputText("V"), sg.InputText("G"), sg.InputText("g"), sg.InputText("h")],
-    [sg.RButton("Cylinder")],
+    [sg.RButton("Udregn")],
     [sg.Text("resultat", key="resultat-pyramide-stub")]
 ]
 
 RetvinkletPrismeLayout = [
     [sg.Text("Udregn Cylinder Rør")],
     [sg.InputText("V"), sg.InputText("G"), sg.InputText("h")],
-    [sg.RButton("Cylinder")],
+    [sg.RButton("Udregn")],
     [sg.Text("resultat", key="resultat-prisme")]
 ]
 
