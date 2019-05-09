@@ -8,7 +8,7 @@ def KegleStubV(V, R, r, h):
 
 
     if V == 0:
-        resultat = math.pi / 3 * h * (R ^ 2 + r ^ 2 + R * r)
+        resultat = math.pi / 3 * h * (R * R + r * r + R * r)
 
 
     elif R == 0:
